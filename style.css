@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Poppins:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #1C2833;
+}
+
+:root{
+  --main-title-font: 'Poppins', sans-serif;
+  --main-title-color: #0BC1B5;
+
+  --main-text-font: 'Fredoka', sans-serif;
+  --main-text-color: #34495E;
+
+  --box-shadow:0 6px 20px 0 #EAEDED;
+}  
+
+/* ----------------------------------------- */
+
+.a{
+  cursor: pointer;
+  color: #85C1E9;
+  text-decoration: none;
+}
+
+#main{
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+form{
+  text-align: center;
+  display: block;
+}
+
+#chatLog {
+  background-color: #f4f4f4;
+  border: 1px solid lightgray;
+  text-align: left;
+  width: 50%;
+  height: 350px; 
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-left: 25%;
+  transition: 0.5s;
+}
+
+#chatLog:hover {
+  cursor: pointer;
+  box-shadow: var(--box-shadow); 
+}
+
+input:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}
+
+#iFrame {
+  visibility: hidden;
+}
+
+.text {
+  padding: 25px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 15px;
+  color: #17202A;
+  font-weight: 500;
+}
+
+.text-box{
+  text-align: left;
+  font-family: var(--main-text-font);
+  color: var(--main-text-color);
+  margin: 20px 20px 20px 100px;
+  font-size: 20px;
+  padding: 10px;
+  width: 35vw;
+  border: 1px solid #64A79C;
+  border-radius: 5px;
+  color: #276A96;
+  outline: none;
+  background-color: #F2FFFD;
+  transition: 0.4s;
+}
+
+.text-box:focus{
+  border: 1px solid #000000;
+  background-color: #F2F9F8;
+  box-shadow: 0 6px 20px 0 #c1f0e9;
+  border: none;
+
+}
+
+#btn{
+  font-family: 'Poppins';
+  color: #34495E;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  color: #276A96;
+  outline: none;
+  width: 180px;
+  border-radius: 7px;
+  border: 1px solid #6bb8a7;
+  background-color: #A2D9CE;
+}
+
+#btn:hover{
+  cursor: pointer;
+}
